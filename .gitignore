@@ -2,3 +2,8 @@
 
 # Ignore generated data files
 *.dat
+
+# Ignore temporary code files
+*.cpp
+*.cc
+*.h

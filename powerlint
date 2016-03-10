@@ -27,5 +27,5 @@ find_files
 trim_log
 grep . "$TRIM_FILE" --no-messages > "$NO_LEAD_FILE"
 
-./lineReader "$NO_LEAD_FILE" > debug.dat 2>&1
+./lineReader "$NO_LEAD_FILE" > "$OUTPUT_FILE" 2>&1
 clean
