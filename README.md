@@ -1,3 +1,5 @@
+[![GPL License](http://darrienglasser.com/gpl-v3-logo.jpg)](GPL License)
+
 Powerlint is a simple set of scripts that is set up to test all .cpp and .h
 files against Google's coding guidelines.
 
@@ -21,3 +23,8 @@ cat debug.dat
 
 Work still needs to be done to sanitize output, and make it cleaner, but it
 is in a fully working state, and does its job as it is. 
+
+_
+
+Please note, cpplint is property of Google, and subject to the Creative
+Commons License. [Link to Google's License](https://github.com/google/styleguide/blob/gh-pages/README.md).
