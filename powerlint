@@ -7,8 +7,8 @@ OUTPUT_FILE='output.dat'
 
 find_files ()
 {
-    find -name "*.cpp" > "$INIT_FILE"
-    find -name "*.h" >> "$INIT_FILE"
+    find -name "src/*.cpp" > "$INIT_FILE"
+    find -name "include*.h" >> "$INIT_FILE"
 }
 
 trim_log ()
@@ -27,5 +27,5 @@ find_files
 trim_log
 grep . "$TRIM_FILE" --no-messages > "$NO_LEAD_FILE"
 
-./lineReader "$NO_LEAD_FILE" > "$OUTPUT_FILE" 2>&1
+lineReader "$NO_LEAD_FILE" > "$OUTPUT_FILE" 2>&1
 clean
